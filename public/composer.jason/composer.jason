@@ -1,0 +1,6 @@
+{
+  "name": "hotel-reservation-system",
+  "description": "A hotel room reservation system",
+  "require": {}
+ "php": "^7.4 || ^8.0}
+}

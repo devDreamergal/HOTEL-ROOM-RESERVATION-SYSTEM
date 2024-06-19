@@ -1,83 +1,86 @@
+
 <html>
 <head>
 <link  href="style.css" rel="stylesheet" type="text/css">
+<script src="script.js" defer></script></link>
+<link href="confirmation.html"></link>
+
 <title>Tahidi Hotel</title>
 </head>
 <body class="mainbody">
-<ul class="links"><b>
+<ul class="links">
+	<b>
 	<li><a href="index.html">HOME</a></li>
 	<li><a href="#photos">PHOTOS</a></li>
 	<li><a href="#reviews">REVIEWS</a></li>
 	<li><a href="#booknow">BOOK NOW</a></li>
-    <li><a href="#reviews">REVIEWS</a></li></b>
+	</b>
 </ul>
-<h1 class="main">WELCOME TO TAHIDI HOTEL</h1><br>
+<h1 class="main">WELCOME TO TAHIDI HOTEL</h1>
 <h2 class="main2" id="photos"><pre>An Experience Like Never Before</pre></h2><br>
 <p class="mainpara">
 </p>
 <table align="center">
 <tr>
-<td><img class="photo1" src="photos/img1.jpg" height="324px" width="574px"></td>
-<td><img class="photo1" src="photos/img2.jpg" height="324px" width="574px"></td>
+<td><img class="photo1" src="photos/img1.jpg" height="324px" width="574px"></img></td>
+<td><img class="photo1" src="photos/img2.jpg" height="324px" width="574px"></img></td>
 </tr>
 <tr>
-<td><img class="photo1" src="photos/img3.jpg" height="324px" width="574px"></td>
-<td><img class="photo1" src="photos/img4.jpg" height="324px" width="574px"></td>
+<td><img class="photo1" src="photos/img3.jpg" height="324px" width="574px"></img></td>
+<td><img class="photo1" src="photos/img4.jpg" height="324px" width="574px"></img></td>
 </tr>
 </table>
 <h2 class="main2"  id="reviews">Reviews</h2>
 <table class="table2">
 <tr>
-    <td><img class="photo2" src="photos/person1.jpg" height="200px" width="200px"></td>
-    <td><img class="photo2" src="photos/person2.jpg" height="200px" width="200px"></td>
-    <td><img class="photo2" src="photos/person3.jpg" height="200px" width="200px"></td> 
+    <td><img class="photo2" src="photos/person1.jpg" height="200px" width="200px"></img></td>
+    <td><img class="photo2" src="photos/person2.jpg" height="200px" width="200px"></img></td>
+    <td><img class="photo2" src="photos/person3.jpg" height="200px" width="200px"></img></td> 
 </tr>
 <tr>
-    <td><img class="photo2" src="photos/5stars.png" height="70px" width="200px"></td>
-    <td><img class="photo2" src="photos/5stars.png" height="70px" width="200px"></td> 
-    <td><img class="photo2" src="photos/5stars.png" height="70px" width="200px"></td>
+    <td><img class="photo2" src="photos/5stars.png" height="70px" width="200px"></img></td>
+    <td><img class="photo2" src="photos/5stars.png" height="70px" width="200px"></img></td> 
+    <td><img class="photo2" src="photos/5stars.png" height="70px" width="200px"></img></td>
 </tr>
 <tr>
-    <td>"Amazing atmosphere<br>first class service"</td>
+    <td>"Amazing atmosphere first class service"</td>
     <td>"It's truly a heaven on Earth"</td> 
-    <td>"Definitely the best<br>hotel in the world"</td>
+    <td>"Definitely the best hotel in the world"</td>
 </tr>
 <tr>
-    <td><img class="photo2" src="photos/person4.jpg" height="200px" width="200px"></td>
-    <td><img class="photo2" src="photos/person5.jpg" height="200px" width="200px"></td>
-    <td><img class="photo2" src="photos/person6.jpg" height="200px" width="200px"></td> 
+    <td><img class="photo2" src="photos/person4.jpg" height="200px" width="200px"></img></td>
+    <td><img class="photo2" src="photos/person5.jpg" height="200px" width="200px"></img></td>
+    <td><img class="photo2" src="photos/person6.jpg" height="200px" width="200px"></img></td> 
 </tr>
 <tr>
-    <td><img class="photo2" src="photos/5stars.png" height="70px" width="200px"></td>
-    <td><img class="photo2" src="photos/5stars.png" height="70px" width="200px"></td> 
-    <td><img class="photo2" src="photos/5stars.png" height="70px" width="200px"></td>
+    <td><img class="photo2" src="photos/5stars.png" height="70px" width="200px"></img></td>
+    <td><img class="photo2" src="photos/5stars.png" height="70px" width="200px"></img></td> 
+    <td><img class="photo2" src="photos/5stars.png" height="70px" width="200px"></img></td>
 </tr>
 <tr>
-    <td>"Excellent Hotel with<br>a terrific location"</td>
-    <td>"Everything is absolutely<br>perfect at Tahidi Hotel"</td> 
-    <td>"Great location, great staff<br>Great Value!"</td>
+    <td>"Excellent Hotel with a terrific location"</td>
+    <td>"Everything is absolutely perfect at Tahidi Hotel"</td> 
+    <td>"Great location, great staff Great Value!"</td>
 </tr>
 </table>
 <h2 class="main2"  id="booknow">Book Now</h2>
-<form action="/book-room" method="POST">
+<form id="reservation Form" action="php/process_reservation.php" method="POST">
 <table class="table3" align="center" style="background-color:#E2E2E2">
 <tr>
-<td height="100">First Name: <input type="text" name="fname" required></td>
-<td height="100">Last Name: <input type="text" name="lname" required></td>
+<td height="100">First Name: <input type="text" name="fname" required/></td>
+<td height="100">Last Name: <input type="text" name="lname" required/></td>
 </tr>
 <tr>
-<td height="100">Phone:	<input type="number" name="phone" required></td>
-<td height="100">Email: <input type="email" name="email" required></td>
+<td height="100">Phone:	<input type="number" name="phone" required></input></td>
+<td height="100">Email: <input type="email" name="email" required></input></td>
 </tr>
-<tr>
     <tr>
         <td height="100">Payment Method:
-        <select name="Paymen Method">
+        <select name="Payment Method">
             <option>Airtel Money</option>
             <option>Paypal</option>
             <option>M-Pesa</option>
-            <option>I&M Bank</option>
-            <option>KCB Bank</option>
+            <option>Bank</option>
             </select>
             <select name="Amount">
                 <option>15000</option>
@@ -200,7 +203,7 @@ Suite:
 </tr>
 </table>
 <div style="text-align:center">  
-    <input type="submit" value="BOOK MY ROOM!" class="submit">  
+    <input type="submit" value="BOOK MY ROOM!" class="submit"> </input> 
 </div>  
 </form>
 <table>
@@ -219,10 +222,10 @@ Suite:
 <td></td>
 <td></td>
 </tr>
-</table>	
+</table>
+</br>
+<script src="js/script.js"></script>	
 </body>
 </html>
 
-</body>
-</html>
 
